@@ -11,6 +11,7 @@ public class testDriver {
         pizza2.displayItem();
 
         Drink drink1 = new Drink("Coke", 3.99,"Small", true, false, 90);
+        drink1.displayItem();
     }//ends our main method/driver
 
 
