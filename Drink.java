@@ -1,5 +1,5 @@
-//public class Drink extends MenuItem
-//{
+public class Drink extends MenuItem
+{
     // ------------------------------------------------------------
     // TODO 1:
     // Add the Drink-specific fields.
@@ -12,7 +12,10 @@
     // These fields should be private.
     // ------------------------------------------------------------
 
-
+    private String size;
+    private boolean isCarbonated;
+    private boolean isAlcoholic;
+    private int calories;
 
     // ------------------------------------------------------------
     // TODO 2:
@@ -32,7 +35,15 @@
     // Use super(name, price) to call the parent constructor.
     // ------------------------------------------------------------
 
+    public Drink(String name, double price, String size, boolean isCarbonated, boolean isAlcoholic, int calories)
+    {
+        super(name,price);
 
+        this.size = size;
+        this.isCarbonated = isCarbonated;
+        this.isAlcoholic = isAlcoholic;
+        this.calories = calories;
+    }//ends our constructor
 
     // ------------------------------------------------------------
     // TODO 3:
@@ -71,4 +82,4 @@
 
 
 
-//}
+}
