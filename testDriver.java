@@ -5,6 +5,10 @@ public class testDriver {
 
         Pizza pizza1 = new Pizza("Pep", 12.99, "Large", "Pan", "Pep");
 
+            Pizza pizza2 = new Pizza("Supreme", 15.99, "Large", "Pan", "Pep, Mushrooms, Onions");
+
+        pizza1.displayItem();
+        pizza2.displayItem();
     }//ends our main method/driver
 
 

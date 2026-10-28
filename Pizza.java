@@ -55,6 +55,17 @@ public class Pizza extends MenuItem
     // - toppings
     // ------------------------------------------------------------
 
+    public String getSize(){
+        return size;
+    }//ends our getSize
+
+    public String getCrustType(){
+        return crustType;
+    }//ends our getCrustType
+
+    public String getToppings(){
+        return toppings;
+    }//ends our getToppings
 
 
     // ------------------------------------------------------------
@@ -65,7 +76,20 @@ public class Pizza extends MenuItem
     // - toppings
     // ------------------------------------------------------------
 
+    public void setSize(String size){
+       this.size = size;
 
+    }//ends our setSize
+
+    public void setCrustType(String crustType){
+        this.crustType = crustType;
+
+    }//ends our setCrustType
+
+    public void setToppings(String toppings){
+        this.toppings = toppings;
+
+    }//ends our setToppings
 
     // ------------------------------------------------------------
     // TODO 5:
@@ -80,8 +104,18 @@ public class Pizza extends MenuItem
     // - Toppings
     //
     // Use getName() and getPrice() to access inherited fields.
-    // ------------------------------------------------------------
+     //------------------------------------------------------------
 
+    @Override
+    public void displayItem()
+    {
+        System.out.println("Type: Pizza");
+        System.out.println("Name: " + getName());
+        System.out.println("Price: $" + getPrice());
+        System.out.println("Size: " + size);
+        System.out.println("Crust Type: " + crustType);
+        System.out.println("Toppings: " + toppings);
+    }//ends our displayItem
 
 
 }
