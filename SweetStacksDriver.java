@@ -69,7 +69,7 @@ public class SweetStacksDriver
                 boolean alcoholic =
                         Boolean.parseBoolean(input.nextLine());
 
-                System.out.println("Caloties: ");
+                System.out.print("Calories: ");
                 int calories = Integer.parseInt(input.nextLine());
 
 
