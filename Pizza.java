@@ -12,6 +12,11 @@ public class Pizza extends MenuItem
     // These fields should be private.
     // ------------------------------------------------------------
 
+    private String size;
+    private String crustType;
+    private String toppings;
+
+
 
 
     // ------------------------------------------------------------
@@ -32,6 +37,14 @@ public class Pizza extends MenuItem
     // Use super(name, price) to call the parent constructor.
     // ------------------------------------------------------------
 
+    public Pizza(String name, double price, String size, String crustType, String toppings)
+    {
+        super(name,price);
+
+        this.size = size;
+        this.crustType = crustType;
+        this.toppings = toppings;
+    }//ends our Pizza constructor
 
 
     // ------------------------------------------------------------
