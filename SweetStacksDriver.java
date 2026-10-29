@@ -11,14 +11,15 @@ public class SweetStacksDriver
 
         int choice = 0;
 
-        while (choice != 4)
+        while (choice != 5)
         {
             System.out.println();
             System.out.println("===== Sweet Stacks Menu =====");
             System.out.println("1. Add Pizza");
             System.out.println("2. Add Drink");
-            System.out.println("3. Display Menu");
-            System.out.println("4. Exit");
+            System.out.println("3. Add Ice Cream");
+            System.out.println("4. Display Menu");
+            System.out.println("5. Exit");
             System.out.print("Choice: ");
 
             choice = Integer.parseInt(input.nextLine());
@@ -82,6 +83,34 @@ public class SweetStacksDriver
 
             else if (choice == 3)
             {
+                System.out.print("Ice cream name: ");
+                String name = input.nextLine();
+
+                System.out.print("Price: ");
+                double price = Double.parseDouble(input.nextLine());
+
+                System.out.print("Flavor: ");
+                String flavor = input.nextLine();
+
+                System.out.print("Scoops: ");
+                int scoops = Integer.parseInt(input.nextLine());
+
+                System.out.print("Cone type: ");
+                String coneType = input.nextLine();
+
+                IceCream iceCream =
+                        new IceCream(name, price,
+                                flavor, scoops,
+                                coneType);
+
+                menu.add(iceCream);
+
+                System.out.println("Ice cream added.");
+            }
+
+
+            else if (choice == 4)
+            {
                 System.out.println();
                 System.out.println("===== Menu Summary =====");
 
@@ -92,7 +121,7 @@ public class SweetStacksDriver
                 }
             }
 
-            else if (choice == 4)
+            else if (choice == 5)
             {
                 System.out.println("Goodbye.");
             }

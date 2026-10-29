@@ -8,6 +8,7 @@ public class testDriver {
             Pizza pizza2 = new Pizza("Supreme", 15.99, "Large", "Pan", "Pep, Mushrooms, Onions");
 
         pizza1.displayItem();
+        System.out.println("\n");
         pizza2.displayItem();
 
         Drink drink1 = new Drink("Coke", 3.99,"Small", true, false, 90);
@@ -18,6 +19,12 @@ public class testDriver {
         IceCream icecream1 = new IceCream("Double Scoop Vanilla Waffle",3.99, "Vanilla", 2, "Waffle");
         // icecream2 uses the overloaded constructorr that sets default for scoops and coneType
         IceCream icecream2 = new IceCream("Manager's Special Chocolate Cup",.99, "Chocolate");
+
+        System.out.println("\n");
+        icecream1.displayItem();
+        System.out.println("\n");
+        icecream2.displayItem();
+        System.out.println("\n");
 
 
     }//ends our main method/driver

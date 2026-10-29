@@ -73,7 +73,16 @@ public class IceCream extends MenuItem
     // - coneType
     // ------------------------------------------------------------
 
+    public String getFlavor(){
+        return flavor;
+    }//ends our getFlavor
 
+    public int getScoops(){
+        return scoops;
+    }//ends our getScoops
+    public String getConeType(){
+        return coneType;
+    }//ends coneType
 
     // ------------------------------------------------------------
     // TODO 5:
@@ -86,7 +95,19 @@ public class IceCream extends MenuItem
     // Add simple validation so scoops cannot be less than 1.
     // ------------------------------------------------------------
 
+    public void setFlavor(String flavor){
+        this.flavor = flavor;
 
+    }//ends our setFlavor
+
+    public void setScoops(int scoops){
+        this.scoops = scoops;
+
+    }//ends our setScoops
+
+    public void setConeType(String coneType) {
+        this.coneType = coneType;
+    }//ends our setConeType
 
     // ------------------------------------------------------------
     // TODO 6:
@@ -103,6 +124,13 @@ public class IceCream extends MenuItem
     // Use getName() and getPrice() to access inherited fields.
     // ------------------------------------------------------------
 
-
-
+    @Override
+    public void displayItem() {
+        System.out.println("Type: Ice Cream");
+        System.out.println("Name: " + getName());
+        System.out.println("Price: $" + getPrice());
+        System.out.println("Flavor: " + flavor);
+        System.out.println("Scoops: " + scoops);
+        System.out.println("Cone Type: " + coneType);
+    }
 }
